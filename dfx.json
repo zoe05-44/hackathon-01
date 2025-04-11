@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "AI-Agent-backend": {
+      "main": "src/AI-Agent-backend/main.mo",
+      "type": "motoko"
+    },
+    "AI-Agent-frontend": {
+      "dependencies": [
+        "AI-Agent-backend"
+      ],
+      "source": [
+        "src/AI-Agent-frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
